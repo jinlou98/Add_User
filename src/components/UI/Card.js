@@ -4,7 +4,7 @@ import classes from './Card.module.css';
 const Card = props => {
     return (
         // we want Card to recognize className 
-        <div className={`${classes.Card} ${props.className}`}>{props.children}</div>
+        <div className={`${classes.card} ${props.className}`}>{props.children}</div>
     )
 };
 
