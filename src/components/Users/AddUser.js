@@ -17,7 +17,7 @@ const AddUser = (props) => {
         return;
     }
 
-    console.log(enteredUsername, enteredAge);
+    props.onAddUser(enteredUsername, enteredAge);
     // reset to empty strings
     setEnteredUsername("");
     setEnteredAge("");
@@ -52,6 +52,7 @@ const AddUser = (props) => {
         ></input>
         <Button type="submit">Add User</Button>
       </form>
+      
     </Card>
   );
 };
